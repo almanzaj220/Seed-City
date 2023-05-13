@@ -1,0 +1,57 @@
+[
+    {
+        "type": "education",
+        "question": "Congrats! You have just graduated High School! Your first choice is to decide your next educational venture. Do you stay with your highschool diploma and go straight into working  or are you looking for more? Choose one below.",
+        "options": ["Start Working", "4 Year College Degree", "Technical School"],
+        "values": [0, -200000, -40000]
+    },
+
+    {
+        "type": "occupation",
+        "question": "Now it is time to choose your occupation. What is you dream job?",
+        "options": ["Lawyer", "Doctor", "Nurse", "Engineer", "Media", "Sales", "Finance", "Business", "Tech Support", "Admin Assistant", "Customer Service Rep"],
+        "values": [150000, 150000, 150000, 150000, 150000, 40000, 150000, 150000, 60000, 40000, 40000]
+    },
+
+    {
+        "type": "housing1",
+        "question": "There are many housing options available in Seed City. Choose where you would like to live.",
+        "options": ["Public housing/Trailer", "Apartment", "House"],
+        "values": [-10000, -20000, -100000]
+    },
+
+    {
+        "type": "housing2",
+        "question": "Would you like to have a vacation home? If not, click next.",
+        "options": ["Vacation House"],
+        "values": [-100000]
+    },
+
+    {
+        "type": "transportation",
+        "question": "You have a job and a house now, but how will you get from place to place? Choose your mode of transportation, but be wary, each of them have their pros and cons",
+        "options": ["Subway", "Jeep", "Lexus", "Bike"],
+        "values": [-2000, -21000, -51000, -1000]
+    },
+
+    {
+        "type": "bills",
+        "question": "Can you pay your bills? Can you pay your automobiles? Everyone has to pay to keep the lights on. Make sure you are saving for your utility bills, grocery shopping, phone bill, credit card and interest. Oh, and if you own a car, make sure you are paying your insurance!",
+        "options": [],
+        "values": [0, 0]
+    },
+
+    {
+        "type": "family1",
+        "question": "The final piece of the puzzle is starting a family. Choose the family that you would like to create. Do you want to get married?",
+        "options": ["Marriage", "No Marriage"],
+        "values": [-25000, 0]
+    },
+    {
+        "type": "family2",
+        "question": "How many kids would you want?",
+        "options": [],
+        "values": [0, 0]
+    }
+
+]

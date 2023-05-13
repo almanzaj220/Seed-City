@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.home {
+    background-image: url('../images/HomePage.png');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.home-heading {
+    position: absolute;
+    left: 21.5%;
+    top: 2%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.home-video {
+  position: absolute;
+}
+
+.home h1 {
+    color: white;
+    font-size: 5vw;
+    text-shadow: 2px 2px 8px black;
+}
+
+.home button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	color:#ffffff;
+	font-family: 'Montserrat';
+	font-size: 2vw;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.home button:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+
+.instructions {
+    background-image: url('../images/InstructionsPage.png');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.instructions-heading {
+    position: absolute;
+    font-size: 2.5vw;
+    background-color:ghostwhite;
+    opacity: 0.7;
+    width: 55vw;
+    left: 22%;
+    top: 3%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.instructions-text {
+   box-sizing: border-box;
+   background-color:ghostwhite;
+   width: 55vw;
+   height: 20vh;
+   opacity: 0.7;
+   font-size: 1.5vw;
+   position: absolute;
+   left: 22%;
+   top: 9%;
+   text-align: center;
+   font-family: 'Montserrat';
+}
+
+.instructions-bank {
+    background-color: rgb(243, 240, 240);
+    width: 22vw;
+    height: 5vh;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+}
+
+.instructions button {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    cursor: pointer;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	color:#ffffff;
+	font-family: 'Montserrat';
+	font-size: 2vw;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.instructions button:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+
+.finalpage {
+    background-image: url('../images/LastPage.png');
+    background-size: cover;
+    background-position: center;
+    height:100vh;
+    width: 100vw;
+    min-height: 100vh
+}
+
+.finalpage-heading {
+    position: absolute;
+    font-size: 2.5vw;
+    background-color:ghostwhite;
+    opacity: 0.7;
+    width: 55vw;
+    left: 22%;
+    top: 10%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.finalpage-text {
+    box-sizing: border-box;
+    background-color:ghostwhite;
+    width: 55vw;
+    height: 44vh;
+    opacity: 0.7;
+    font-size: 1.5vw;
+    position: absolute;
+    left: 22%;
+    top: 16%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.finalpage-bank {
+    background-color: rgb(243, 240, 240);
+    width: 22vw;
+    height: 5vh;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+}
+
+.questions {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh
+}
+
+.questions-choices-education {
+    box-sizing: border-box;
+    background-color:ghostwhite;
+    width: 45vw;
+    height: 26vh;
+    opacity: 0.7;
+    font-size: 1.8vw;
+    position: absolute;
+    left: 27%;
+    top: 8%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.questions-choices-occupation {
+    box-sizing: border-box;
+    background-color:ghostwhite;
+    width: 45vw;
+    height: 16vh;
+    opacity: 0.7;
+    font-size: 1.8vw;
+    position: absolute;
+    left: 27%;
+    top: 10%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.questions-choices-housing {
+    box-sizing: border-box;
+    background-color:ghostwhite;
+    width: 45vw;
+    height: 19vh;
+    opacity: 0.7;
+    font-size: 1.8vw;
+    position: absolute;
+    left: 27%;
+    top: 10%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.questions-choices-transportation {
+    box-sizing: border-box;
+    background-color:ghostwhite;
+    width: 45vw;
+    height: 22vh;
+    opacity: 0.7;
+    font-size: 1.8vw;
+    position: absolute;
+    left: 27%;
+    top: 10%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.questions-choices-bills {
+    box-sizing: border-box;
+    background-color:ghostwhite;
+    width: 45vw;
+    height: 26vh;
+    opacity: 0.7;
+    font-size: 1.8vw;
+    position: absolute;
+    left: 27%;
+    top: 30%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.questions-choices-family {
+    box-sizing: border-box;
+    background-color:ghostwhite;
+    width: 45vw;
+    height: 19vh;
+    opacity: 0.7;
+    font-size: 1.8vw;
+    position: absolute;
+    left: 27%;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.questions-bank {
+    background-color: rgb(243, 240, 240);
+    width: 22vw;
+    height: 5vh;
+    position: absolute;
+    top: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-family: 'Montserrat';
+}
+
+.questions-next-btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    font-size: 2vw;
+    cursor: pointer;
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	color:#ffffff;
+    font-family: 'Montserrat';
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.questions-next-btn:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+
+.questions-pay-btn {
+    position: absolute;
+    top: 26%;
+    right: 7.75%;
+    width: 14vw;
+    height: 14vh;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.questions-choices-btns-education {
+    position: absolute;
+    top: 35%;
+    left: 34.5%;
+}
+
+.questions-choices-btns-occupation1 {
+    position: absolute;
+    left: 15%;
+    top: 27%;
+}
+
+.questions-choices-btns-occupation2 {
+    position: absolute;
+    left: 36.5%;
+    top: 27%;
+}
+
+.questions-choices-btns-occupation3 {
+    position: absolute;
+    left: 32.5%;
+    top: 27%;
+}
+
+.questions-choices-btns-housing {
+    position: absolute;
+    left: 37.5%;
+    top: 30%;
+}
+
+.questions-choices-btns-transportation {
+    position: absolute;
+    left: 42%;
+    top: 33%;
+}
+
+.questions-choices-btns-family {
+    position: absolute;
+    left: 43%;
+    top: 21%;
+}
+.questions-choices-btns-style {
+    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+    font-family: 'Montserrat';
+	font-size: 1vw;
+	padding: 4px 8px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+
+.questions-choices-btns-style:hover {
+    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+	background-color:#5cbf2a;
+}
+
+.questions-arrow {
+    position: absolute;
+    top: 24%;
+    right: 14%;
+}
