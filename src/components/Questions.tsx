@@ -253,6 +253,22 @@ const Questions: React.FC<IProps> = (
         }
     }
 
+    const handleWarningChange = (): string => {
+        if (questionType === "education") {
+            return "questions-education-warning"
+        } else if (questionType === "occupation") {
+            return "questions-occupation-warning"
+        } else if (questionType === "housing1" || questionType === "housing2") {
+            return "questions-housing-warning"
+        } else if (questionType === "transportation") {
+            return "questions-transportation-warning"
+        } else if (questionType === "bills") {
+            return "questions-bills-warning"
+        } else {
+            return "questions-family-warning"
+        }
+    }
+
     /* const [isFirstQuestion, setIsFirstQuestion] = useState(true)
     const handleBackClick = (): void => {
         const indexes = [1,2,3,4,5]
@@ -282,7 +298,7 @@ const Questions: React.FC<IProps> = (
                     {/** this is where the buttons were before */}
 
                     {showWarning && (
-                        <h6 style={ { color: "red" } }>Please select an option</h6>
+                        <h6 className={handleWarningChange()} style={ { color: "red" } }>Please select an option</h6>
                     )}
 
                     <div>
@@ -308,13 +324,13 @@ const Questions: React.FC<IProps> = (
 
                 <div>
                         {curQuestion === questions[7]["question"] && (
-                            <button className='questions-next-btn'><Link to="/finalbalance">Next</Link></button>
+                            <Link to="/finalbalance" className='questions-link'><button className='questions-next-btn'>Next</button></Link>
                         )}
                         {curQuestion !== questions[7]["question"] && (
                             <button className='questions-next-btn' onClick={handleNextClick}>Next</button>
                         )}
                 </div>
-                {is5thQuestion && (<Arrow className='questions-arrow'/>)}                
+                {is5thQuestion && (<Arrow className='questions-arrow' style={{ width: "100", height: "100" }}/>)}                
                 {is5thQuestion && (<button className='questions-pay-btn' onClick={handleOptionClick}>pay</button>)}
                 <h4 className='questions-bank'>Bank statement: {curMoney}</h4>
             </div>

@@ -31,21 +31,36 @@
     position: absolute;
     bottom: 5%;
     right: 5%;
-	background-color:#44c767;
+    /*background-color: #44c767;*/
+	background-color: rgb(176, 212, 195);
 	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
-	color:#ffffff;
+	color:rgb(26, 84, 57);
 	font-family: 'Montserrat';
 	font-size: 2vw;
 	padding:10px 25px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
+    cursor: pointer;
 }
 
 .home button:hover {
-    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
+    background:linear-gradient(to bottom, rgb(26, 84, 57) 5%, rgb(176, 212, 195) 100%);
+	background-color:rgb(26, 84, 57);
+    color: white;
+}
+
+.home-link {
+    text-decoration: none;
+}
+
+.home_link:hover {
+    color: white;
+}
+
+.home-link:visited {
+    color: rgb(26, 84, 57);
 }
 
 .instructions {
@@ -101,11 +116,11 @@
     bottom: 5%;
     right: 5%;
     cursor: pointer;
-	background-color:#44c767;
+	background-color: rgb(176, 212, 195);
 	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
-	color:#ffffff;
+	color: rgb(26, 84, 57);
 	font-family: 'Montserrat';
 	font-size: 2vw;
 	padding:10px 25px;
@@ -113,9 +128,18 @@
 	text-shadow:0px 1px 0px #2f6627;
 }
 
+.instructions-link {
+    text-decoration: none;
+}
+
+.instructions-link:visited {
+    color: rgb(26, 84, 57);
+}
+
 .instructions button:hover {
-    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
+    background:linear-gradient(to bottom, rgb(26, 84, 57) 5%, rgb(176, 212, 195) 100%);
+	background-color:rgb(26, 84, 57);
+    color: white;
 }
 
 .finalpage {
@@ -234,7 +258,7 @@
     box-sizing: border-box;
     background-color:ghostwhite;
     width: 45vw;
-    height: 26vh;
+    height: 33vh;
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
@@ -276,11 +300,11 @@
     right: 5%;
     font-size: 2vw;
     cursor: pointer;
-	background-color:#44c767;
+	background-color:rgb(176, 212, 195);
 	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
-	color:#ffffff;
+	color:rgb(26, 84, 57);
     font-family: 'Montserrat';
 	padding:10px 25px;
 	text-decoration:none;
@@ -288,8 +312,9 @@
 }
 
 .questions-next-btn:hover {
-    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
+    background:linear-gradient(to bottom, rgb(26, 84, 57) 5%, rgb(176, 212, 195) 100%);
+	background-color:rgb(26, 84, 57);
+    color: white;
 }
 
 .questions-pay-btn {
@@ -344,13 +369,12 @@
     top: 21%;
 }
 .questions-choices-btns-style {
-    background:linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
-	background-color:#44c767;
+	background-color:rgb(176, 212, 195);
 	border-radius:28px;
 	border:1px solid #18ab29;
 	display:inline-block;
 	cursor:pointer;
-	color:#ffffff;
+	color: rgb(26, 84, 57);
     font-family: 'Montserrat';
 	font-size: 1vw;
 	padding: 4px 8px;
@@ -359,12 +383,46 @@
 }
 
 .questions-choices-btns-style:hover {
-    background:linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
-	background-color:#5cbf2a;
+    background:linear-gradient(to bottom, rgb(26, 84, 57) 5%, rgb(176, 212, 195) 100%);
+	background-color:rgb(26, 84, 57);
+    color: white;
+}
+
+.questions-link {
+    text-decoration: none;
+}
+
+.questions-link:visited {
+    color: white;
 }
 
 .questions-arrow {
     position: absolute;
-    top: 24%;
-    right: 14%;
+    top: 18.25%;
+    right: 11%;
+    transform: scale(0.5);
+}
+
+.questions-education-warning {
+    position: absolute;
+    left: 33%;
+    top: 68%;
+}
+
+.questions-occupation-warning {
+    position: absolute;
+    left: 33%;
+    top: 48%;
+}
+
+.questions-transportation-warning {
+    position: absolute;
+    left: 33%;
+    top: 63%;
+}
+
+.questions-family-warning {
+    position: absolute;
+    left: 33%;
+    top: 60%;
 }
