@@ -39,7 +39,7 @@ function App() {
   const [questionType, setQuestionType] = useState<IState["questionType"]>(questions[0]["type"])
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/instructions" element={<Instructions curMoney={curMoney} />} />
