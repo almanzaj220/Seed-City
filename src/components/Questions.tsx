@@ -324,7 +324,7 @@ const Questions: React.FC<IProps> = (
 
                 <div>
                         {curQuestion === questions[7]["question"] && (
-                            <Link to="/seed-city/finalbalance" className='questions-link'><button className='questions-next-btn'>Next</button></Link>
+                            <Link to="/finalbalance" className='questions-link'><button className='questions-next-btn'>Next</button></Link>
                         )}
                         {curQuestion !== questions[7]["question"] && (
                             <button className='questions-next-btn' onClick={handleNextClick}>Next</button>

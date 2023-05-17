@@ -24,7 +24,7 @@ const Instructions: React.FC<IProps> = ({curMoney}) => {
                     </h4>
 
                 <h4 className="instructions-bank">Bank statement: {curMoney}</h4>
-                <Link to="/seed-city/questions" className="instructions-link"><button>Next</button></Link>
+                <Link to="/questions" className="instructions-link"><button>Next</button></Link>
             </div>
         </Fragment>
     );};

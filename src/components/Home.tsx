@@ -11,7 +11,7 @@ const Home = () => {
             <Helmet><title>Seed City</title></Helmet>
             <div className="home">
                 <h1 className="home-heading">Welcome to Seed City</h1>
-                <Link to="/seed-city/instructions" className="home-link"><button>Next</button></Link>
+                <Link to="/instructions" className="home-link"><button>Next</button></Link>
 
                 <div className='home-video'>
                     {showVideo && (

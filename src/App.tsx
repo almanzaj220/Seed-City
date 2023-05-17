@@ -41,9 +41,9 @@ function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
-        <Route path="/seed-city" element={<Home />} />
-        <Route path="/seed-city/instructions" element={<Instructions curMoney={curMoney} />} />
-        <Route path="/seed-city/questions" element={
+        <Route path="/" element={<Home />} />
+        <Route path="/instructions" element={<Instructions curMoney={curMoney} />} />
+        <Route path="/questions" element={
           <Questions 
             curQuestion={curQuestion} 
             setCurQuestion={setCurQuestion} 
@@ -69,7 +69,7 @@ function App() {
             setChildren={setChildren} 
             questionType={questionType}
             setQuestionType={setQuestionType} />} />
-        <Route path="/seed-city/finalbalance" element={
+        <Route path="/finalbalance" element={
           <FinalBalance 
             curMoney={curMoney}
             education={education}
