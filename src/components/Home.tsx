@@ -17,12 +17,19 @@ const Home = () => {
                     {showVideo && (
                     <ReactPlayer
                     playing
-                    url= 'videos/IntroVideo.mp4'
+                    url= "videos/introVideo.mp4"
                     width='100%'
                     height='100%'
                     onPause={() => setShowVideo(false)}
                 />
                     )}
+                    {/*showVideo && (
+                        <video autoPlay playsInline controls muted preload="auto" onPause={() => setShowVideo(false)} onClick={() => setShowVideo(false)}>
+                            <source src={video} type="webm"/>
+                        </video>
+                        )
+                    */}
+                    {/*<iframe width="560" height="315" src="https://www.youtube.com/embed/g1i9cCYNA5M?controls=0&"></iframe>*/}
                 </div>
             </div>
         </Fragment>

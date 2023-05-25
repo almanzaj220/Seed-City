@@ -84,9 +84,9 @@ const Questions: React.FC<IProps> = (
     const handleOptions = (questionType: string): void => {
         if (questionType === "occupation") {
             if (education === "Start Working") {
-                setCurOptions(["Sales", "Admin Assistant", "Customer Service Rep"])
+                setCurOptions(["Sales", "Assistant", "Customer Service"])
             } else if (education === "Technical School") {
-                setCurOptions(["Sales", "Tech Support", "Admin Assistant", "Customer Service Rep"])
+                setCurOptions(["Sales", "Tech Support", "Assistant", "Customer Service"])
             }
         } 
     }
@@ -332,7 +332,7 @@ const Questions: React.FC<IProps> = (
                 </div>
                 {is5thQuestion && (<Arrow className='questions-arrow' style={{ width: "100", height: "100" }}/>)}                
                 {is5thQuestion && (<button className='questions-pay-btn' onClick={handleOptionClick}>pay</button>)}
-                <h4 className='questions-bank'>Bank statement: {curMoney}</h4>
+                <h4 className='questions-bank'>Bank Statement: {curMoney}</h4>
             </div>
         </Fragment>
     )

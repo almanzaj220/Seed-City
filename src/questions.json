@@ -9,7 +9,7 @@
     {
         "type": "occupation",
         "question": "Now it is time to choose your occupation. What is you dream job?",
-        "options": ["Lawyer", "Doctor", "Nurse", "Engineer", "Media", "Sales", "Finance", "Business", "Tech Support", "Admin Assistant", "Customer Service Rep"],
+        "options": ["Lawyer", "Doctor", "Nurse", "Engineer", "Media", "Sales", "Finance", "Business", "Tech Support", "Assistant", "Customer Service"],
         "values": [150000, 150000, 150000, 150000, 150000, 40000, 150000, 150000, 60000, 40000, 40000]
     },
 
@@ -30,7 +30,7 @@
     {
         "type": "transportation",
         "question": "You have a job and a house now, but how will you get from place to place? Choose your mode of transportation, but be wary, each of them have their pros and cons",
-        "options": ["Subway", "Jeep", "Lexus", "Bike"],
+        "options": ["Metro", "Jeep", "Lexus", "Bike"],
         "values": [-2000, -21000, -51000, -1000]
     },
 
