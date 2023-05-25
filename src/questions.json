@@ -16,7 +16,7 @@
     {
         "type": "housing1",
         "question": "There are many housing options available in Seed City. Choose where you would like to live.",
-        "options": ["Public housing/Trailer", "Apartment", "House"],
+        "options": ["Public housing", "Apartment", "House"],
         "values": [-10000, -20000, -100000]
     },
 

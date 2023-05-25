@@ -426,3 +426,43 @@
     left: 33%;
     top: 60%;
 }
+
+.questions-education-selection {
+    position: absolute;
+    left: 27%;
+    top: 68%;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+}
+
+.questions-occupation-selection {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+}
+
+.questions-housing-selection {
+    position: absolute;
+    left: 27%;
+    top: 50%;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+}
+
+.questions-transportation-selection {
+    position: absolute;
+    left: 35%;
+    top: 60%;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+}
+
+.questions-family-selection {
+    position: absolute;
+    left: 32%;
+    top: 60%;
+    font-size: 1.2vw;
+    font-family: 'Montserrat';
+}

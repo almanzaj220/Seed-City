@@ -79,6 +79,7 @@ const Questions: React.FC<IProps> = (
     const [showWarning, setShowWarning] = useState(false)
     const [isLastQuestion, setIsLastQuestion] = useState(false)
     const [is5thQuestion, setIs5thQuestion] = useState(false)
+    const [showSelection, setShowSelection] = useState(false)
 
     // these changes to state are manual, it'd be better if they weren't
     const handleOptions = (questionType: string): void => {
@@ -103,6 +104,7 @@ const Questions: React.FC<IProps> = (
                 setCurOptions(question["options"])
                 setPrevMoney(curMoney)
                 setShowWarning(false)
+                setShowSelection(false)
                 setMadeChoice(false)
                 setQuestionType(question["type"])
 
@@ -175,6 +177,11 @@ const Questions: React.FC<IProps> = (
             setCurMoney(prevMoney - 4000)
         }
         setMadeChoice(true)
+
+        if (questionType !== "bills" && questionType !== "housing2") {
+            setShowSelection(true)
+        }
+
         for (var question of questions) {
             if (question["question"] === curQuestion) {
                 for (var index in question["options"]) {
@@ -269,6 +276,34 @@ const Questions: React.FC<IProps> = (
         }
     }
 
+    const handleSelectionChange = (): string => {
+        if (questionType === "education") {
+            return "questions-education-selection"
+        } else if (questionType === "occupation") {
+            return "questions-occupation-selection"
+        } else if (questionType === "housing1" || questionType === "housing2") {
+            return "questions-housing-selection"
+        } else if (questionType === "transportation") {
+            return "questions-transportation-selection"
+        } else {
+            return "questions-family-selection"
+        }
+    }
+
+    const handleSelectionMade = (): string => {
+        if (questionType === "education") {
+            return education
+        } else if (questionType === "occupation") {
+            return occupation
+        } else if (questionType === "housing1") {
+            return housing
+        } else if (questionType === "transportation") {
+            return transportation
+        } else {
+            return marriage
+        }
+    }
+
     /* const [isFirstQuestion, setIsFirstQuestion] = useState(true)
     const handleBackClick = (): void => {
         const indexes = [1,2,3,4,5]
@@ -299,6 +334,10 @@ const Questions: React.FC<IProps> = (
 
                     {showWarning && (
                         <h6 className={handleWarningChange()} style={ { color: "red" } }>Please select an option</h6>
+                    )}
+
+                    {showSelection && (
+                        <h6 className={handleSelectionChange()}>Your selection: {handleSelectionMade()}</h6>
                     )}
 
                     <div>
