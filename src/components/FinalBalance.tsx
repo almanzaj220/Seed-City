@@ -20,9 +20,9 @@ const FinalBalance: React.FC<IProps> = ({ curMoney, education, occupation, housi
             <div className='finalpage'>
                 <h4 className='finalpage-bank'>Final Balance: {curMoney}</h4>
                 <h3 className='finalpage-heading'>Your Life in Seed City:</h3>
-                <h6 className='finalpage-text'>You have completed the game! Here’s a summary of your life 
+                <h6 className='finalpage-text'>You have completed the game! <br></br> Here’s a summary of your life 
                     in Seed City: <br></br>
-                    <ul style={{ textAlign: "start" }}>
+                    <ul style={{ textAlign: "center"}}>
                         <li>Your Highest Education pursued is {education}</li>
                         <li>Your Occupation is {occupation}.</li>
                         <li>You Live in a {housing}</li>

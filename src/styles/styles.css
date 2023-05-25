@@ -177,6 +177,10 @@
     font-family: 'Montserrat';
 }
 
+.finalpage-text ul {
+    list-style-type: none;
+}
+
 .finalpage-bank {
     background-color: rgb(243, 240, 240);
     width: 22vw;
@@ -351,9 +355,15 @@
     top: 27%;
 }
 
-.questions-choices-btns-housing {
+.questions-choices-btns-housing1 {
     position: absolute;
-    left: 37.5%;
+    left: 39%;
+    top: 30%;
+}
+
+.questions-choices-btns-housing2 {
+    position: absolute;
+    left: 45%;
     top: 30%;
 }
 

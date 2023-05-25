@@ -249,8 +249,10 @@ const Questions: React.FC<IProps> = (
             } else {
                 return "questions-choices-btns-occupation3"
             }
-        } else if (questionType === "housing1" || questionType === "housing2") {
-            return "questions-choices-btns-housing"
+        } else if (questionType === "housing1") {
+            return "questions-choices-btns-housing1"
+        } else if (questionType === "housing2") {
+            return "questions-choices-btns-housing2"
         } else if (questionType === "transportation") {
             return "questions-choices-btns-transportation"
         } else if (questionType === "bills") {
