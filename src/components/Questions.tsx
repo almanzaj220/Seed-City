@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
 import questions from '../questions.json';
@@ -15,9 +15,6 @@ import { ReactComponent as Arrow} from '../icons/arrow.svg'
 /* 
 missing functionality:
 - adding a add roommate option
-- adding a recap sidebar
-- * add icons/logos
-- * lower text box in bills section
 - * pop ups for 2 part questions
 - * bills --> click "scan seed app to pay"
 */
@@ -75,14 +72,10 @@ const Questions: React.FC<IProps> = (
         questionType,
         setQuestionType }) => { 
 
-    const [madeChoice, setMadeChoice] = useState(false)
-    const [showWarning, setShowWarning] = useState(false)
     const [isLastQuestion, setIsLastQuestion] = useState(false)
     const [is5thQuestion, setIs5thQuestion] = useState(false)
-    const [showSelection, setShowSelection] = useState(false)
 
-    // these changes to state are manual, it'd be better if they weren't
-    const handleOptions = (questionType: string): void => {
+    const handleOccupationOptions = (): void => {
         if (questionType === "occupation") {
             if (education === "Start Working") {
                 setCurOptions(["Sales", "Assistant", "Customer Service"])
@@ -103,9 +96,6 @@ const Questions: React.FC<IProps> = (
                 setCurQuestion(question["question"])
                 setCurOptions(question["options"])
                 setPrevMoney(curMoney)
-                setShowWarning(false)
-                setShowSelection(false)
-                setMadeChoice(false)
                 setQuestionType(question["type"])
 
                 if (questionType === "family1") {
@@ -117,29 +107,12 @@ const Questions: React.FC<IProps> = (
                 if (questionType === "bills") {
                     setIs5thQuestion(false)
                 }
-                
-                handleOptions(question["type"])
                 break
             }
             
             if (question["question"] === curQuestion) {
                 isNextQuestion = true
             }
-        } 
-    }
-
-    const handleNextClick = (): void => {
-        if (!madeChoice) {
-             if (questionType === "housing2") {
-                setMadeChoice(true)
-                changeQuestion()
-            } else if (questionType === "bills") {
-
-            }
-            else {setShowWarning(true)}
-
-        } else { 
-            changeQuestion()
         }
     }
 
@@ -160,7 +133,7 @@ const Questions: React.FC<IProps> = (
             setHousing(choice)
         } else if (question["type"] === "housing2") {
             if (choice === "Vacation House") {
-                setHousing(housing + " and you own a " + choice)
+                setHousing(housing + " and own a " + choice)
             }
         } else if (question["type"] === "transportation") {
             setTransportation(choice)
@@ -172,26 +145,21 @@ const Questions: React.FC<IProps> = (
     }
 
     const handleOptionClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>): void => {
-        setShowWarning(false)
         if (questionType === "bills") {
-            setCurMoney(prevMoney - 4000)
-        }
-        setMadeChoice(true)
-
-        if (questionType !== "bills" && questionType !== "housing2") {
-            setShowSelection(true)
+            setCurMoney(curMoney - 4000)
         }
 
         for (var question of questions) {
             if (question["question"] === curQuestion) {
                 for (var index in question["options"]) {
                     if (question["options"][index] === e.currentTarget.innerHTML) {
-                        setCurMoney(prevMoney + question["values"][index])
+                        setCurMoney(curMoney + question["values"][index])
                         setChoice(question, e.currentTarget.innerHTML)
                     }
                 }
             } 
         }
+        changeQuestion()
     }
 
     const handleChildrenChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
@@ -262,68 +230,8 @@ const Questions: React.FC<IProps> = (
         }
     }
 
-    const handleWarningChange = (): string => {
-        if (questionType === "education") {
-            return "questions-education-warning"
-        } else if (questionType === "occupation") {
-            return "questions-occupation-warning"
-        } else if (questionType === "housing1" || questionType === "housing2") {
-            return "questions-housing-warning"
-        } else if (questionType === "transportation") {
-            return "questions-transportation-warning"
-        } else if (questionType === "bills") {
-            return "questions-bills-warning"
-        } else {
-            return "questions-family-warning"
-        }
-    }
-
-    const handleSelectionChange = (): string => {
-        if (questionType === "education") {
-            return "questions-education-selection"
-        } else if (questionType === "occupation") {
-            return "questions-occupation-selection"
-        } else if (questionType === "housing1" || questionType === "housing2") {
-            return "questions-housing-selection"
-        } else if (questionType === "transportation") {
-            return "questions-transportation-selection"
-        } else {
-            return "questions-family-selection"
-        }
-    }
-
-    const handleSelectionMade = (): string => {
-        if (questionType === "education") {
-            return education
-        } else if (questionType === "occupation") {
-            return occupation
-        } else if (questionType === "housing1") {
-            return housing
-        } else if (questionType === "transportation") {
-            return transportation
-        } else {
-            return marriage
-        }
-    }
-
-    /* const [isFirstQuestion, setIsFirstQuestion] = useState(true)
-    const handleBackClick = (): void => {
-        const indexes = [1,2,3,4,5]
-        for (var index of indexes) {
-            if (questions[index]["question"] === curQuestion) {
-                setCurQuestion(questions[index-1]["question"])
-                setCurOptions(questions[index-1]["options"])
-                setCurMoney(prevMoney)
-            }
-        }
-    } the next lines are the rendering code
-        {isFirstQuestion && (
-        <button><Link to="/instructions">Back</Link></button>
-    )}
-    {!isFirstQuestion && (
-        <button onClick={handleBackClick}>Back</button>
-    )}
-    */
+    // used to update state on time for 2nd question
+    useEffect(() => {handleOccupationOptions()}, [education])
 
     return (
         <Fragment>
@@ -332,26 +240,18 @@ const Questions: React.FC<IProps> = (
                 <div className={handleQuestionBoxChange()}>
                     <h5>{curQuestion}</h5>
                     {is5thQuestion && (<h5 style={{ color: "red" }}>Click "SCAN YOUR SEED APP TO PAY"</h5>)}
-                    {/** this is where the buttons were before */}
-
-                    {showWarning && (
-                        <h6 className={handleWarningChange()} style={ { color: "red" } }>Please select an option</h6>
-                    )}
-
-                    {showSelection && (
-                        <h6 className={handleSelectionChange()}>Your selection: {handleSelectionMade()}</h6>
-                    )}
 
                     <div>
                         {isLastQuestion && (
                             <form>
-                                <label>Enter number of kids:
+                                <label style={{ fontSize: "1.3vw" }}>Enter number of kids:  
                                 <input
                                     type="number"
                                     name="kids"
                                     value={children}
                                     onChange={handleChildrenChange}
                                     min="0"
+                                    size={45}
                                 />
                                 </label>
                             </form>
@@ -364,12 +264,9 @@ const Questions: React.FC<IProps> = (
                 </div>
 
                 <div>
-                        {curQuestion === questions[7]["question"] && (
-                            <Link to="/finalbalance" className='questions-link'><button className='questions-next-btn'>Next</button></Link>
-                        )}
-                        {curQuestion !== questions[7]["question"] && (
-                            <button className='questions-next-btn' onClick={handleNextClick}>Next</button>
-                        )}
+                    {curQuestion === questions[7]["question"] && (
+                        <Link to="/finalbalance" className='questions-link'><button className='questions-next-btn'>Next</button></Link>
+                    )}
                 </div>
                 {is5thQuestion && (<Arrow className='questions-arrow' style={{ width: "100", height: "100" }}/>)}                
                 {is5thQuestion && (<button className='questions-pay-btn' onClick={handleOptionClick}>pay</button>)}

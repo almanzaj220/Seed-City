@@ -23,12 +23,12 @@ const FinalBalance: React.FC<IProps> = ({ curMoney, education, occupation, housi
                 <h6 className='finalpage-text'>You have completed the game! <br></br> Here’s a summary of your life 
                     in Seed City: <br></br>
                     <ul style={{ textAlign: "center"}}>
-                        <li>Your Highest Education pursued is {education}</li>
-                        <li>Your Occupation is {occupation}.</li>
-                        <li>You Live in a {housing}</li>
                         <li>Your Highest Education pursued is {education}.</li>
-                        <li>Your transportation method is a {transportation}</li>
-                        <li>Your family life includes {marriage} and {children} kids</li>
+                        <li>Your Occupation is {occupation}.</li>
+                        <li>You Live in a {housing}.</li>
+                        <li>Your Highest Education pursued is {education}.</li>
+                        <li>Your transportation method is a {transportation}.</li>
+                        <li>Your family life includes {marriage} and {children} kids.</li>
                     </ul> 
                 </h6>
             </div>
