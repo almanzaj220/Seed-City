@@ -22,9 +22,9 @@
 
     {
         "type": "housing2",
-        "question": "Would you like to have a vacation home? If not, click next.",
-        "options": ["Vacation House"],
-        "values": [-100000]
+        "question": "Would you like to have a vacation home?",
+        "options": ["Vacation House", "No Vacation House"],
+        "values": [-100000, 0]
     },
 
     {

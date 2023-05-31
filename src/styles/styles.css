@@ -88,7 +88,7 @@
    box-sizing: border-box;
    background-color:ghostwhite;
    width: 55vw;
-   height: 20vh;
+   height: 18vh;
    opacity: 0.7;
    font-size: 1.4vw;
    position: absolute;
@@ -206,7 +206,7 @@
     box-sizing: border-box;
     background-color:ghostwhite;
     width: 45vw;
-    height: 26vh;
+    height: 23vh;
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
@@ -220,7 +220,7 @@
     box-sizing: border-box;
     background-color:ghostwhite;
     width: 45vw;
-    height: 16vh;
+    height: 15vh;
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
@@ -234,7 +234,7 @@
     box-sizing: border-box;
     background-color:ghostwhite;
     width: 45vw;
-    height: 19vh;
+    height: 15.5vh;
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
@@ -333,38 +333,38 @@
 
 .questions-choices-btns-education {
     position: absolute;
-    top: 35%;
+    top: 32%;
     left: 34.5%;
 }
 
 .questions-choices-btns-occupation1 {
     position: absolute;
     left: 18%;
-    top: 27%;
+    top: 26%;
 }
 
 .questions-choices-btns-occupation2 {
     position: absolute;
     left: 40%;
-    top: 27%;
+    top: 26%;
 }
 
 .questions-choices-btns-occupation3 {
     position: absolute;
     left: 35%;
-    top: 27%;
+    top: 26%;
 }
 
 .questions-choices-btns-housing1 {
     position: absolute;
     left: 39%;
-    top: 30%;
+    top: 27%;
 }
 
 .questions-choices-btns-housing2 {
     position: absolute;
-    left: 45%;
-    top: 30%;
+    left: 39.5%;
+    top: 27%;
 }
 
 .questions-choices-btns-transportation {
@@ -411,68 +411,4 @@
     top: 18.25%;
     right: 11%;
     transform: scale(0.5);
-}
-
-.questions-education-warning {
-    position: absolute;
-    left: 33%;
-    top: 68%;
-}
-
-.questions-occupation-warning {
-    position: absolute;
-    left: 33%;
-    top: 48%;
-}
-
-.questions-transportation-warning {
-    position: absolute;
-    left: 33%;
-    top: 63%;
-}
-
-.questions-family-warning {
-    position: absolute;
-    left: 33%;
-    top: 60%;
-}
-
-.questions-education-selection {
-    position: absolute;
-    left: 27%;
-    top: 68%;
-    font-size: 1.2vw;
-    font-family: 'Montserrat';
-}
-
-.questions-occupation-selection {
-    position: absolute;
-    left: 27%;
-    top: 50%;
-    font-size: 1.2vw;
-    font-family: 'Montserrat';
-}
-
-.questions-housing-selection {
-    position: absolute;
-    left: 27%;
-    top: 50%;
-    font-size: 1.2vw;
-    font-family: 'Montserrat';
-}
-
-.questions-transportation-selection {
-    position: absolute;
-    left: 35%;
-    top: 60%;
-    font-size: 1.2vw;
-    font-family: 'Montserrat';
-}
-
-.questions-family-selection {
-    position: absolute;
-    left: 32%;
-    top: 60%;
-    font-size: 1.2vw;
-    font-family: 'Montserrat';
 }

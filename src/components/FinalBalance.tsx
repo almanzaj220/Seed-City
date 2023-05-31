@@ -28,7 +28,7 @@ const FinalBalance: React.FC<IProps> = ({ curMoney, education, occupation, housi
                         <li>You Live in a {housing}.</li>
                         <li>Your Highest Education pursued is {education}.</li>
                         <li>Your transportation method is a {transportation}.</li>
-                        <li>Your family life includes {marriage} and {children} kids.</li>
+                        <li>Your family life includes {marriage} and {children} {children === 1 ? "kid" : "kids"}.</li>
                     </ul> 
                 </h6>
             </div>
