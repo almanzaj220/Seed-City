@@ -263,6 +263,21 @@ const Questions: React.FC<IProps> = (
                     {curOptions.map((option) => <button className='questions-choices-btns-style' onClick={handleOptionClick}>{option}</button> )}
                 </div>
 
+
+                {(questionType === "housing1" || questionType === "housing2") && (
+                    <h3 className='questions-public-housing-label'>Public housing</h3>
+                )}
+                {(questionType === "housing1" || questionType === "housing2") && (
+                    <h3 className='questions-apartment-label'>Apartment</h3>
+                )}
+                {(questionType === "housing1" || questionType === "housing2") && (
+                    <h3 className='questions-house-label'>House</h3>
+                )}
+                {(questionType === "housing1" || questionType === "housing2") && (
+                    <h3 className='questions-vacation-house-label'>Vacation House</h3>
+                )}
+              
+
                 <div>
                     {curQuestion === questions[7]["question"] && (
                         <Link to="/finalbalance" className='questions-link'><button className='questions-next-btn'>Next</button></Link>

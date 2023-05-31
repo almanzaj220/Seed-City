@@ -412,3 +412,39 @@
     right: 11%;
     transform: scale(0.5);
 }
+
+.questions-public-housing-label {
+    position: absolute;
+    width: 50%;
+    top: 48%;
+    left: 21%;
+    font-family: 'Montserrat';
+    color: #FFF6E5;
+}
+
+.questions-apartment-label {
+    position: absolute;
+    width: 50%;
+    top: 48%;
+    left: 72%;
+    font-family: 'Montserrat';
+    color: #FFF6E5;;
+}
+
+.questions-house-label {
+    position: absolute;
+    width: 50%;
+    top: 95%;
+    left: 74%;
+    font-family: 'Montserrat';
+    color: #FFF6E5;;
+}
+
+.questions-vacation-house-label {
+    position: absolute;
+    width: 50%;
+    top: 95%;
+    left: 20%;
+    font-family: 'Montserrat';
+    color: #FFF6E5;;
+}
