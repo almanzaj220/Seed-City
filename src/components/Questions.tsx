@@ -240,7 +240,6 @@ const Questions: React.FC<IProps> = (
                 <div className={handleQuestionBoxChange()}>
                     <h5>{curQuestion}</h5>
                     {is5thQuestion && (<h5 style={{ color: "red" }}>Click "SCAN YOUR SEED APP TO PAY"</h5>)}
-                    {/*https://almanzaj220.github.io/seed-city*/}
                     <div>
                         {isLastQuestion && (
                             <form>
