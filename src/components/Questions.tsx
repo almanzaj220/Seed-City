@@ -165,11 +165,20 @@ const Questions: React.FC<IProps> = (
     const handleChildrenChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
         const value = isNaN(e.target.valueAsNumber) ? null : e.target.valueAsNumber
         if (value !== null) {
-            setChildren(value)
-            if (value !== 0) {
-                setCurMoney(prevMoney - ((value * 10000) + 15000) )
+            if (marriage === "No Marriage") {
+                setChildren(value)
+                if (value !== 0) {
+                    setCurMoney(prevMoney - ((value * 10000) + 15000) )
+                } else {
+                    setCurMoney(prevMoney)
+                }
             } else {
-                setCurMoney(prevMoney)
+                setChildren(value)
+                if (value !== 0) {
+                    setCurMoney(prevMoney - ((value * 10000) + 15000 + 25000) )
+                } else {
+                    setCurMoney(prevMoney-25000)
+                }
             }
         }
     }
