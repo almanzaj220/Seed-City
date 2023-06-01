@@ -210,7 +210,7 @@
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
-    left: 27%;
+    left: 28%;
     top: 8%;
     text-align: center;
     font-family: 'Montserrat';
@@ -224,7 +224,7 @@
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
-    left: 27%;
+    left: 28%;
     top: 10%;
     text-align: center;
     font-family: 'Montserrat';
@@ -238,7 +238,7 @@
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
-    left: 27%;
+    left: 28%;
     top: 10%;
     text-align: center;
     font-family: 'Montserrat';
@@ -252,7 +252,7 @@
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
-    left: 27%;
+    left: 28%;
     top: 10%;
     text-align: center;
     font-family: 'Montserrat';
@@ -280,7 +280,7 @@
     opacity: 0.7;
     font-size: 1.8vw;
     position: absolute;
-    left: 27%;
+    left: 28%;
     text-align: center;
     font-family: 'Montserrat';
 }
@@ -334,50 +334,99 @@
 .questions-choices-btns-education {
     position: absolute;
     top: 32%;
-    left: 34.5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-choices-btns-education button {
+    width: 13%;
 }
 
 .questions-choices-btns-occupation1 {
     position: absolute;
-    left: 18%;
     top: 26%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-choices-btns-occupation1 button {
+    width: 6%;
 }
 
 .questions-choices-btns-occupation2 {
     position: absolute;
-    left: 40%;
     top: 26%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-choices-btns-occupation2 button {
+    width: 11%;
 }
 
 .questions-choices-btns-occupation3 {
     position: absolute;
-    left: 35%;
     top: 26%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-choices-btns-occupation3 button {
+    width: 6%;
 }
 
 .questions-choices-btns-housing1 {
     position: absolute;
-    left: 39%;
     top: 27%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-choices-btns-housing1 button {
+    width: 10%;
 }
 
 .questions-choices-btns-housing2 {
     position: absolute;
-    left: 39.5%;
     top: 27%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-choices-btns-housing2 button {
+    width: 12%;
 }
 
 .questions-choices-btns-transportation {
     position: absolute;
-    left: 42%;
     top: 33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.questions-choices-btns-transportation button {
+    width: 5%;
 }
 
 .questions-choices-btns-family {
     position: absolute;
-    left: 43%;
     top: 21%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
+.questions-choices-btns-family button {
+    width: 9%;
+}
+
 .questions-choices-btns-style {
 	background-color:rgb(176, 212, 195);
 	border-radius:28px;
