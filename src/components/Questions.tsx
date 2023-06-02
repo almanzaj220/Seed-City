@@ -10,7 +10,6 @@ import background3 from '../images/HousingPage.png';
 import background4 from '../images/TransportationPage.png';
 import background5 from '../images/BillsPage.png';
 import background6 from '../images/FamilyPage.png';
-import { ReactComponent as Arrow} from '../icons/arrow.svg'
 
 /* 
 missing functionality:
@@ -290,9 +289,8 @@ const Questions: React.FC<IProps> = (
                     {curQuestion === questions[7]["question"] && (
                         <Link to="/finalbalance" className='questions-link'><button className='questions-next-btn'>Next</button></Link>
                     )}
-                </div>
-                {is5thQuestion && (<Arrow className='questions-arrow' style={{ width: "100", height: "100" }}/>)}                
-                {is5thQuestion && (<button className='questions-pay-btn' onClick={handleOptionClick}>pay</button>)}
+                </div>                
+                {is5thQuestion && (<button className='questions-next-btn' onClick={handleOptionClick}>Next</button>)}
                 <h4 className='questions-bank'>Bank Statement: {curMoney}</h4>
             </div>
         </Fragment>
