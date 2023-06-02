@@ -247,7 +247,7 @@ const Questions: React.FC<IProps> = (
             <div className="questions" style={{ backgroundImage: `url(${handleBackgroundChange()})`}}>
                 <div className={handleQuestionBoxChange()}>
                     <h5>{curQuestion}</h5>
-                    {is5thQuestion && (<h5 style={{ color: "red" }}>Click "SCAN YOUR SEED APP TO PAY"</h5>)}
+                    {is5thQuestion && (<h5 style={{ color: "red" }}>Click "Next" to pay your bills!</h5>)}
                     <div>
                         {isLastQuestion && (
                             <form>
