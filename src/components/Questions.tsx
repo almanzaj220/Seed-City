@@ -272,7 +272,7 @@ const Questions: React.FC<IProps> = (
 
 
                 {(questionType === "housing1" || questionType === "housing2") && (
-                    <h3 className='questions-public-housing-label'>Public housing</h3>
+                    <h3 className='questions-public-housing-label'>Public Housing</h3>
                 )}
                 {(questionType === "housing1" || questionType === "housing2") && (
                     <h3 className='questions-apartment-label'>Apartment</h3>
