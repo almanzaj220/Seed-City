@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/seed-city/static/css/main.8d3549ce.css",
-    "main.js": "/seed-city/static/js/main.7974e70d.js",
-    "static/media/FamilyPage.png": "/seed-city/static/media/FamilyPage.249fc2ec7e90c2952b89.png",
-    "static/media/EducationPage.png": "/seed-city/static/media/EducationPage.6e5b3e4c18c486fd775b.png",
-    "static/media/BillsPage.png": "/seed-city/static/media/BillsPage.fb6802e85af2ae5f4431.png",
-    "static/media/HousingPage.png": "/seed-city/static/media/HousingPage.c7a65d6bfad52e866f7b.png",
-    "static/media/InstructionsPage.png": "/seed-city/static/media/InstructionsPage.45764dd28fb55438b371.png",
-    "static/media/OccupationPage.png": "/seed-city/static/media/OccupationPage.68ebe56b942ddf7585eb.png",
-    "static/media/LastPage.png": "/seed-city/static/media/LastPage.88157a4052656304e3b9.png",
-    "static/media/TransportationPage.png": "/seed-city/static/media/TransportationPage.4fa74c4158ebc0a30a4b.png",
-    "static/media/HomePage.png": "/seed-city/static/media/HomePage.9ed8af632b489f3302e4.png",
-    "index.html": "/seed-city/index.html",
-    "main.8d3549ce.css.map": "/seed-city/static/css/main.8d3549ce.css.map",
-    "main.7974e70d.js.map": "/seed-city/static/js/main.7974e70d.js.map"
+    "main.css": "/static/css/main.333a2934.css",
+    "main.js": "/static/js/main.0498ef98.js",
+    "static/media/FamilyPage.png": "/static/media/FamilyPage.249fc2ec7e90c2952b89.png",
+    "static/media/EducationPage.png": "/static/media/EducationPage.6e5b3e4c18c486fd775b.png",
+    "static/media/BillsPage.png": "/static/media/BillsPage.fb6802e85af2ae5f4431.png",
+    "static/media/HousingPage.png": "/static/media/HousingPage.c7a65d6bfad52e866f7b.png",
+    "static/media/InstructionsPage.png": "/static/media/InstructionsPage.45764dd28fb55438b371.png",
+    "static/media/OccupationPage.png": "/static/media/OccupationPage.68ebe56b942ddf7585eb.png",
+    "static/media/LastPage.png": "/static/media/LastPage.88157a4052656304e3b9.png",
+    "static/media/TransportationPage.png": "/static/media/TransportationPage.4fa74c4158ebc0a30a4b.png",
+    "static/media/HomePage.png": "/static/media/HomePage.9ed8af632b489f3302e4.png",
+    "index.html": "/index.html",
+    "main.333a2934.css.map": "/static/css/main.333a2934.css.map",
+    "main.0498ef98.js.map": "/static/js/main.0498ef98.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d3549ce.css",
-    "static/js/main.7974e70d.js"
+    "static/css/main.333a2934.css",
+    "static/js/main.0498ef98.js"
   ]
 }
